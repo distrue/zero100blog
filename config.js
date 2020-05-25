@@ -1,6 +1,7 @@
 module.exports = {
   siteTitle: 'Gatsby Starter Business', // Site title.
   siteTitleAlt: 'Business', // Alternative site title for SEO.
+  siteUrl: process.env.DEPLOY_URL,
   siteLogo: '/icons/icon-512x512.png', // Logo used for SEO and manifest.
   pathPrefix: '', // Prefixes all links. For cases when deployed to example.github.io/gatsby-starter-business/.
   siteDescription: 'Leverage Gatsby Business Starter for your Business.', // Website description used for RSS feeds/meta description tag.

@@ -1,4 +1,5 @@
 const config = require('./config')
+require("dotenv").config();
 
 const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix
 
@@ -180,6 +181,12 @@ module.exports = {
           },
         ],
       },
+    },
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: process.env.S3_BUCKET_NAME
+      }
     },
   ],
 }
