@@ -7,14 +7,13 @@ It follows the [JAMstack architecture](https://jamstack.org) by using Git as a s
 [Gatsby Starter Business](https://gatsby-starter-business.netlify.com)
 
 ## Features
-* Complete Business Website Suite - Home Page, About Page, Pricing Page, Contact Page and Blog
+* Complete Business Website Suite - Home Page, About Page, Contact Page and Blog
 * Netlify CMS for Content Management
 * SEO Friendly (Sitemap, Schemas, Meta Tags, GTM etc)
 * Bulma and Sass Support for styling
 * Progressive Web App & Offline Support
 * Tags and RSS Feed for Blog
 * Disqus and Share Support
-* Elastic-Lunr Search (NEW)
 * Pagination (NEW)
 * Contact Form (Netlify Forms)
 * Easy Configuration using `config.js` file
