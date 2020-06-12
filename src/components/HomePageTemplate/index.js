@@ -1,17 +1,13 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Offerings from '../Offerings'
-import Testimonials from '../Testimonials'
 import PropTypes from 'prop-types'
 
 const HomePageTemplate = ({
   title,
   heading,
   description,
-  offerings,
   meta_title,
   meta_description,
-  testimonials,
 }) => (
   <div>
     <Helmet>
@@ -21,15 +17,9 @@ const HomePageTemplate = ({
     <section className='hero is-primary is-bold is-medium'>
       <div className='hero-body'>
         <div className='container'>
-          <div className='columns'>
-            <div className='column is-10 is-offset-1'>
-              <div className='section'>
-                <h1 className='title'>
-                  {title}
-                </h1>
-              </div>
-            </div>
-          </div>
+          <h3 className='title'>
+            {title}
+          </h3>
         </div>
       </div>
     </section>
@@ -41,13 +31,11 @@ const HomePageTemplate = ({
             <div className='column is-10 is-offset-1'>
               <div className='content'>
                 <div>
-                  <h3 className='has-text-weight-semibold is-size-2'>
+                  <h3 className='has-text-weight-semibold'>
                     {heading}
                   </h3>
                   <p>{description}</p>
                 </div>
-                <Offerings gridItems={offerings.blurbs} />
-                <Testimonials testimonials={testimonials} />
               </div>
             </div>
           </div>
@@ -63,10 +51,6 @@ HomePageTemplate.propTypes = {
   meta_description: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
-  offerings: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
-  testimonials: PropTypes.array,
 
 }
 
